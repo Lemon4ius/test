@@ -5,7 +5,7 @@ public class Tester {
     private String englishLevel;
     private double salary;
 
-    // Перегруженные конструкторы
+   
     public Tester(String name, String surname, int experienceInYears) {
         this(name, surname, experienceInYears, "С2", 2000.0);
     }
@@ -22,7 +22,7 @@ public class Tester {
         this.salary = salary;
     }
 
-    // Перегруженные методы
+  
     public void printInfo()
     {
         System.out.println("Имя: " + name);
@@ -43,7 +43,7 @@ public class Tester {
         salary *= 1.2;
     }
 
-    // Статический метод
+  
     static boolean printInfo(Tester tester)
     {
         return tester.experienceInYears >= 3 && tester.englishLevel.equals("A1");
